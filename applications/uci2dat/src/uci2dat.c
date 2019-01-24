@@ -898,7 +898,7 @@ void hooker(FILE * fp, param * p, const char * devname)
     }
     else if(0 == strcmp(p->dat_key, "AutoChannelSelect"))
     {
-        if(0 == strcmp(p->value, "0"))
+        if(0 == strcmp(p->value, "auto"))
             FPRINT(fp, p, "2");
         else
             FPRINT(fp, p, "0");
